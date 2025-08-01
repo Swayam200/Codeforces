@@ -116,7 +116,7 @@ g++ -std=c++17 -O2 -o solution 800_Rated/4A_Watermelon.cpp
 
 <div align="center">
 
-[![Codeforces](https://img.shields.io/badge/Codeforces-YOUR_CF_USERNAME-1F8ACB?style=for-the-badge&logo=codeforces)](https://codeforces.com/profile/swayam200)
+[![Codeforces](https://img.shields.io/badge/Codeforces-swayam200-1F8ACB?style=for-the-badge&logo=codeforces)](https://codeforces.com/profile/swayam200)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/swayam200)
 [![Portfolio](https://img.shields.io/badge/Portfolio-Visit-FF5722?style=for-the-badge&logo=google-chrome)](https://swayam200.github.io)
 
