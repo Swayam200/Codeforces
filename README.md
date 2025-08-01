@@ -29,6 +29,15 @@ This repository chronicles my adventure through competitive programming, where I
 
 | Metric | Count | Progress |
 |--------|-------|----------|
+| **Total Problems** | 2 | 🟩🟩⬜⬜⬜ |
+| **800-Rated** | 2 | ✅ |
+| **900-Rated** | 0 | ⏳ |
+| **1000-Rated** | 0 | ⏳ |
+| **1100-Rated** | 0 | ⏳ |
+| **Current Streak** | 2 days | 🔥 |
+
+| Metric | Count | Progress |
+|--------|-------|----------|
 | **Total Problems** | 1 | 🟩⬜⬜⬜⬜ |
 | **800-Rated** | 1 | ✅ |
 | **900-Rated** | 0 | ⏳ |
@@ -43,8 +52,12 @@ This repository chronicles my adventure through competitive programming, where I
 
 ```
 📁 Codeforces/
-├── 📂 800_Rated/
-│   └── 4A_Watermelon.cpp
+├── 📂 .github/
+│   └── 📂 workflows/
+│       └── 📄 update-readme.yml
+└── 📂 800_rated/
+    ├── 📄 4A_Watermelon.cpp
+    └── 📄 71A_Way_Too_Long_Words.cpp
 ├── 📄 update_readme.py
 └── 📄 README.md
 ```
@@ -57,20 +70,8 @@ This repository chronicles my adventure through competitive programming, where I
 
 | # | Problem | Difficulty | Status | Solution | Tags |
 |---|---------|------------|--------|----------|------|
-| 1 | [4A - Watermelon](https://codeforces.com/problemset/problem/4/A) | 800 | ✅ Solved | [📝 Code](./800_Rated/4A_Watermelon.cpp) | `math` `brute force` |
-
-*More problems coming soon...*
-
----
-
-## 🛠️ Tools & Setup
-
-- **Language**: C++17
-- **IDE**: Visual Studio Code / CLion
-- **Compiler**: g++ with optimization flags
-- **Testing**: Custom test case runner
-
-### ⚡ Quick Setup
+| 1 | [4A - Watermelon](https://codeforces.com/problemset/problem/4/A) | 800 | ✅ Solved | [📝 Code](./800_rated/4A_Watermelon.cpp) | `brute force`, `math` |
+| 2 | [71A - Way Too Long Words](https://codeforces.com/problemset/problem/71/A) | 800 | ✅ Solved | [📝 Code](./800_rated/71A_Way_Too_Long_Words.cpp) | `strings` |### ⚡ Quick Setup
 ```bash
 # Clone the repository
 git clone https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME.git
