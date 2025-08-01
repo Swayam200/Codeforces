@@ -4,7 +4,7 @@
 
 ![Codeforces](https://img.shields.io/badge/Codeforces-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white)
 ![C++](https://img.shields.io/badge/C++17-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-![Problems Solved](https://img.shields.io/badge/Problems%20Solved-1-success?style=for-the-badge)
+![Problems Solved](https://img.shields.io/badge/Problems%20Solved-2-success?style=for-the-badge)
 ![GitHub repo size](https://img.shields.io/github/repo-size/swayam200/Codeforces?style=for-the-badge)
 
 </div>
@@ -140,5 +140,5 @@ g++ -std=c++17 -O2 -o solution 800_Rated/4A_Watermelon.cpp
 ---
 
 <div align="center">
-<sub>Last updated: <strong>January 2025</strong> | Made with ❤️ and lots of ☕</sub>
+<sub>Last updated: <strong>August 2025</strong> | Made with ❤️ and lots of ☕</sub>
 </div>
