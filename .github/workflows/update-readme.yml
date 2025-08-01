@@ -2,7 +2,7 @@ name: 🚀 Update Codeforces README
 
 on:
   schedule:
-    # Run every day at 7 PM IST
+    # Run every day at 7 PM IST (1:30 PM UTC)
     - cron: '30 13 * * *'
   
   # Allow manual triggering
@@ -14,6 +14,7 @@ on:
       - '**/*.cpp'
       - '**/*.py'
       - '**/*.java'
+      - 'update_readme.py'
 
 jobs:
   update-readme:
@@ -24,6 +25,7 @@ jobs:
       uses: actions/checkout@v4
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
+        fetch-depth: 0
     
     - name: 🐍 Set up Python
       uses: actions/setup-python@v4
@@ -33,35 +35,66 @@ jobs:
     - name: 📦 Install Dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install requests
+        pip install requests pathlib
+        echo "Dependencies installed successfully"
     
     - name: 🔄 Update README
       env:
         CODEFORCES_USERNAME: ${{ secrets.CODEFORCES_USERNAME }}
       run: |
-        python update_readme.py $CODEFORCES_USERNAME
+        echo "Starting README update..."
+        echo "Username: $CODEFORCES_USERNAME"
+        python update_readme.py "$CODEFORCES_USERNAME"
+        echo "README update completed"
     
-    - name: 💾 Commit Changes
+    - name: 📊 Check Changes
+      id: changes
+      run: |
+        if git diff --quiet HEAD; then
+          echo "No changes detected"
+          echo "has_changes=false" >> $GITHUB_OUTPUT
+        else
+          echo "Changes detected:"
+          git diff --name-only HEAD
+          echo "has_changes=true" >> $GITHUB_OUTPUT
+        fi
+    
+    - name: 💾 Commit and Push Changes
+      if: steps.changes.outputs.has_changes == 'true'
       run: |
         git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
+        git config --local user.name "GitHub Action Bot"
         
-        # Check if there are changes
-        if git diff --quiet; then
-          echo "No changes to commit"
+        # Add and commit changes
+        git add README.md
+        git commit -m "🚀 Auto-update README with latest Codeforces progress
+        
+        📊 Updated Statistics:
+        - Refreshed problem count and progress bars
+        - Updated repository structure
+        - Synchronized with Codeforces API data
+        - Generated on $(date +'%Y-%m-%d %H:%M UTC')
+        
+        🤖 [Automated via GitHub Actions]"
+        
+        # Push changes
+        git push origin HEAD:${{ github.ref_name }}
+        echo "✅ Changes pushed successfully!"
+    
+    - name: 📝 Summary
+      run: |
+        echo "## 🎯 README Update Summary" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        if [ "${{ steps.changes.outputs.has_changes }}" = "true" ]; then
+          echo "✅ **Status**: README updated successfully" >> $GITHUB_STEP_SUMMARY
+          echo "📊 **Changes**: Problem statistics and repository structure updated" >> $GITHUB_STEP_SUMMARY
         else
-          git add README.md
-          git commit -m "🚀 Auto-update README with latest Codeforces progress
-          
-          - Updated problem statistics
-          - Refreshed progress tracking
-          - Auto-generated on $(date +'%Y-%m-%d %H:%M UTC')
-          
-          [skip ci]"
-          git push
+          echo "ℹ️ **Status**: No changes needed" >> $GITHUB_STEP_SUMMARY
+          echo "📊 **Info**: README is already up to date" >> $GITHUB_STEP_SUMMARY
         fi
+        echo "🕐 **Timestamp**: $(date +'%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_STEP_SUMMARY
 
-  # Optional: Add a job to create release notes when you hit milestones
+  # Milestone tracking job
   milestone-check:
     runs-on: ubuntu-latest
     needs: update-readme
@@ -70,27 +103,58 @@ jobs:
     steps:
     - name: 📥 Checkout Repository
       uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
     
-    - name: 🎯 Check Milestones
-      run: |
-        # Count solved problems
-        PROBLEM_COUNT=$(find . -name "*.cpp" | wc -l)
-        
-        # Check for milestone achievements
-        if [ $((PROBLEM_COUNT % 10)) -eq 0 ] && [ $PROBLEM_COUNT -gt 0 ]; then
-          echo "🎉 Milestone reached: $PROBLEM_COUNT problems solved!"
-          
-          # Create a release
-          gh release create "milestone-$PROBLEM_COUNT" \
-            --title "🏆 Milestone: $PROBLEM_COUNT Problems Solved!" \
-            --notes "Congratulations on solving $PROBLEM_COUNT Codeforces problems! 🎊
-            
-            🔥 **Achievement Unlocked**: Keep up the great work!
-            📈 **Next Goal**: $(($PROBLEM_COUNT + 10)) problems
-            
-            ---
-            *This release was automatically created by GitHub Actions*" \
-            --generate-notes
-        fi
+    - name: 🎯 Check for Milestones
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        # Count total problems solved
+        TOTAL_PROBLEMS=0
+        
+        # Count all solution files
+        for rating_dir in *_rated/; do
+          if [ -d "$rating_dir" ]; then
+            count=$(find "$rating_dir" -name "*.cpp" -o -name "*.py" -o -name "*.java" | wc -l)
+            TOTAL_PROBLEMS=$((TOTAL_PROBLEMS + count))
+          fi
+        done
+        
+        echo "Total problems solved: $TOTAL_PROBLEMS"
+        
+        # Check for milestone achievements (every 5 problems)
+        if [ $((TOTAL_PROBLEMS % 5)) -eq 0 ] && [ $TOTAL_PROBLEMS -gt 0 ]; then
+          echo "🎉 Milestone reached: $TOTAL_PROBLEMS problems solved!"
+          
+          # Check if release already exists
+          if gh release view "milestone-$TOTAL_PROBLEMS" >/dev/null 2>&1; then
+            echo "Release for milestone $TOTAL_PROBLEMS already exists"
+          else
+            echo "Creating new milestone release..."
+            
+            # Create milestone release
+            gh release create "milestone-$TOTAL_PROBLEMS" \
+              --title "🏆 Milestone: $TOTAL_PROBLEMS Problems Solved!" \
+              --notes "# 🎊 Congratulations on solving $TOTAL_PROBLEMS Codeforces problems!
+            
+            ## 🔥 Achievement Unlocked
+            You've successfully solved **$TOTAL_PROBLEMS problems** on Codeforces! This is a testament to your dedication and problem-solving skills.
+            
+            ## 📈 Progress Stats
+            - **Current Milestone**: $TOTAL_PROBLEMS problems ✅
+            - **Next Goal**: $((TOTAL_PROBLEMS + 5)) problems 🎯
+            - **Achievement Date**: $(date +'%B %d, %Y')
+            
+            ## 🚀 Keep Going!
+            Every problem solved is a step closer to becoming a better competitive programmer. Keep up the excellent work!
+            
+            ---
+            *🤖 This release was automatically created by GitHub Actions*" \
+              --generate-notes
+              
+            echo "✅ Milestone release created successfully!"
+          fi
+        else
+          echo "No milestone reached. Next milestone: $((((TOTAL_PROBLEMS / 5) + 1) * 5)) problems"
+        fi
