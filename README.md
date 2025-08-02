@@ -38,6 +38,15 @@ This repository chronicles my adventure through competitive programming, where I
 
 | Metric | Count | Progress |
 |--------|-------|----------|
+| **Total Problems** | 3 | 🟩🟩🟩⬜⬜ |
+| **800-Rated** | 3 | ✅ |
+| **900-Rated** | 0 | ⏳ |
+| **1000-Rated** | 0 | ⏳ |
+| **1100-Rated** | 0 | ⏳ |
+| **Current Streak** | 3 days | 🔥 |
+
+| Metric | Count | Progress |
+|--------|-------|----------|
 | **Total Problems** | 2 | 🟩🟩⬜⬜⬜ |
 | **800-Rated** | 2 | ✅ |
 | **900-Rated** | 0 | ⏳ |
