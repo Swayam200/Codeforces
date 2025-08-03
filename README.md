@@ -4,7 +4,7 @@
 
 ![Codeforces](https://img.shields.io/badge/Codeforces-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white)
 ![C++](https://img.shields.io/badge/C++17-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-![Problems Solved](https://img.shields.io/badge/Problems%20Solved-7-success?style=for-the-badge)
+![Problems Solved](https://img.shields.io/badge/Problems%20Solved-8-success?style=for-the-badge)
 ![GitHub repo size](https://img.shields.io/github/repo-size/swayam200/Codeforces?style=for-the-badge)
 
 </div>
@@ -29,8 +29,8 @@ This repository chronicles my adventure through competitive programming, where I
 
 | Metric | Count | Progress |
 |--------|-------|----------|
-| **Total Problems** | 7 | 🟩🟩🟩🟩🟩 |
-| **800-Rated** | 7 | ✅ |
+| **Total Problems** | 8 | 🟩🟩🟩🟩🟩 |
+| **800-Rated** | 8 | ✅ |
 | **900-Rated** | 0 | ⏳ |
 | **1000-Rated** | 0 | ⏳ |
 | **1100-Rated** | 0 | ⏳ |
@@ -52,6 +52,7 @@ This repository chronicles my adventure through competitive programming, where I
     ├── 📄 4A_Watermelon.cpp
     ├── 📄 71A_Way_Too_Long_Words.cpp
     ├── 📄 231A_Team.cpp
+    ├── 📄 112A_Petya_&_Strings.cpp
     ├── 📄 158A_Next_Round.cpp
     ├── 📄 263A_Beautiful_Matrix.cpp
     └── 📄 50A_Domino_Piling.cpp
@@ -71,9 +72,10 @@ This repository chronicles my adventure through competitive programming, where I
 | 2 | [4A - Watermelon](https://codeforces.com/problemset/problem/4/A) | 800 | ✅ Solved | [📝 Code](./800_rated/4A_Watermelon.cpp) | `brute force`, `math` |
 | 3 | [71A - Way Too Long Words](https://codeforces.com/problemset/problem/71/A) | 800 | ✅ Solved | [📝 Code](./800_rated/71A_Way_Too_Long_Words.cpp) | `strings` |
 | 4 | [231A - Team](https://codeforces.com/problemset/problem/231/A) | 800 | ✅ Solved | [📝 Code](./800_rated/231A_Team.cpp) | `brute force`, `greedy` |
-| 5 | [158A - Next Round](https://codeforces.com/problemset/problem/158/A) | 800 | ✅ Solved | [📝 Code](./800_rated/158A_Next_Round.cpp) | `*special`, `implementation` |
-| 6 | [263A - Beautiful Matrix](https://codeforces.com/problemset/problem/263/A) | 800 | ✅ Solved | [📝 Code](./800_rated/263A_Beautiful_Matrix.cpp) | `implementation` |
-| 7 | [50A - Domino piling](https://codeforces.com/problemset/problem/50/A) | 800 | ✅ Solved | [📝 Code](./800_rated/50A_Domino_Piling.cpp) | `greedy`, `math` |### ⚡ Quick Setup
+| 5 | [112A - Petya and Strings](https://codeforces.com/problemset/problem/112/A) | 800 | ✅ Solved | [📝 Code](./800_rated/112A_Petya_&_Strings.cpp) | `implementation`, `strings` |
+| 6 | [158A - Next Round](https://codeforces.com/problemset/problem/158/A) | 800 | ✅ Solved | [📝 Code](./800_rated/158A_Next_Round.cpp) | `*special`, `implementation` |
+| 7 | [263A - Beautiful Matrix](https://codeforces.com/problemset/problem/263/A) | 800 | ✅ Solved | [📝 Code](./800_rated/263A_Beautiful_Matrix.cpp) | `implementation` |
+| 8 | [50A - Domino piling](https://codeforces.com/problemset/problem/50/A) | 800 | ✅ Solved | [📝 Code](./800_rated/50A_Domino_Piling.cpp) | `greedy`, `math` |### ⚡ Quick Setup
 ```bash
 # Clone the repository
 git clone https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME.git
