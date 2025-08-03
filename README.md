@@ -104,23 +104,6 @@ g++ -std=c++17 -O2 -o solution 800_Rated/4A_Watermelon.cpp
 
 ---
 
-## 📈 Learning Journey
-
-### 🎯 Current Focus Areas
-- [ ] Basic math and implementation problems
-- [ ] Greedy algorithms
-- [ ] Basic data structures
-- [ ] String manipulation
-- [ ] Number theory fundamentals
-
-### 📅 Weekly Goals
-- **Week 1**: Complete 5 problems (800 rating) ✅ 1/5
-- **Week 2**: Complete 10 problems (800 rating)
-- **Week 3**: Introduction to 900-rated problems
-- **Week 4**: Master basic implementation patterns
-
----
-
 ## 🌟 GitHub Activity
 
 <div align="center">
