@@ -36,32 +36,6 @@ This repository chronicles my adventure through competitive programming, where I
 | **1100-Rated** | 0 | ⏳ |
 | **Current Streak** | 3 days | 🔥 |
 
-| Metric | Count | Progress |
-|--------|-------|----------|
-| **Total Problems** | 3 | 🟩🟩🟩⬜⬜ |
-| **800-Rated** | 3 | ✅ |
-| **900-Rated** | 0 | ⏳ |
-| **1000-Rated** | 0 | ⏳ |
-| **1100-Rated** | 0 | ⏳ |
-| **Current Streak** | 3 days | 🔥 |
-
-| Metric | Count | Progress |
-|--------|-------|----------|
-| **Total Problems** | 2 | 🟩🟩⬜⬜⬜ |
-| **800-Rated** | 2 | ✅ |
-| **900-Rated** | 0 | ⏳ |
-| **1000-Rated** | 0 | ⏳ |
-| **1100-Rated** | 0 | ⏳ |
-| **Current Streak** | 2 days | 🔥 |
-
-| Metric | Count | Progress |
-|--------|-------|----------|
-| **Total Problems** | 1 | 🟩⬜⬜⬜⬜ |
-| **800-Rated** | 1 | ✅ |
-| **900-Rated** | 0 | ⏳ |
-| **1000-Rated** | 0 | ⏳ |
-| **Current Streak** | 1 day | 🔥 |
-
 </div>
 
 ---
@@ -104,9 +78,7 @@ g++ -std=c++17 -O2 -o solution 800_Rated/4A_Watermelon.cpp
 
 ---
 
-## 📈 Learning Journey
-
-### 🎯 Current Focus Areas
+## 🎯 Current Focus Areas
 - [ ] Basic math and implementation problems
 - [ ] Greedy algorithms
 - [ ] Basic data structures
