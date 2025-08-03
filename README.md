@@ -4,7 +4,7 @@
 
 ![Codeforces](https://img.shields.io/badge/Codeforces-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white)
 ![C++](https://img.shields.io/badge/C++17-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-![Problems Solved](https://img.shields.io/badge/Problems%20Solved-2-success?style=for-the-badge)
+![Problems Solved](https://img.shields.io/badge/Problems%20Solved-3-success?style=for-the-badge)
 ![GitHub repo size](https://img.shields.io/github/repo-size/swayam200/Codeforces?style=for-the-badge)
 
 </div>
@@ -26,6 +26,24 @@ This repository chronicles my adventure through competitive programming, where I
 <div align="center">
 
 ### 🏆 Statistics Dashboard
+
+| Metric | Count | Progress |
+|--------|-------|----------|
+| **Total Problems** | 3 | 🟩🟩🟩⬜⬜ |
+| **800-Rated** | 3 | ✅ |
+| **900-Rated** | 0 | ⏳ |
+| **1000-Rated** | 0 | ⏳ |
+| **1100-Rated** | 0 | ⏳ |
+| **Current Streak** | 3 days | 🔥 |
+
+| Metric | Count | Progress |
+|--------|-------|----------|
+| **Total Problems** | 3 | 🟩🟩🟩⬜⬜ |
+| **800-Rated** | 3 | ✅ |
+| **900-Rated** | 0 | ⏳ |
+| **1000-Rated** | 0 | ⏳ |
+| **1100-Rated** | 0 | ⏳ |
+| **Current Streak** | 3 days | 🔥 |
 
 | Metric | Count | Progress |
 |--------|-------|----------|
@@ -57,7 +75,8 @@ This repository chronicles my adventure through competitive programming, where I
 │       └── 📄 update-readme.yml
 └── 📂 800_rated/
     ├── 📄 4A_Watermelon.cpp
-    └── 📄 71A_Way_Too_Long_Words.cpp
+    ├── 📄 71A_Way_Too_Long_Words.cpp
+    └── 📄 231A_Team.cpp
 ├── 📄 update_readme.py
 └── 📄 README.md
 ```
@@ -71,7 +90,8 @@ This repository chronicles my adventure through competitive programming, where I
 | # | Problem | Difficulty | Status | Solution | Tags |
 |---|---------|------------|--------|----------|------|
 | 1 | [4A - Watermelon](https://codeforces.com/problemset/problem/4/A) | 800 | ✅ Solved | [📝 Code](./800_rated/4A_Watermelon.cpp) | `brute force`, `math` |
-| 2 | [71A - Way Too Long Words](https://codeforces.com/problemset/problem/71/A) | 800 | ✅ Solved | [📝 Code](./800_rated/71A_Way_Too_Long_Words.cpp) | `strings` |### ⚡ Quick Setup
+| 2 | [71A - Way Too Long Words](https://codeforces.com/problemset/problem/71/A) | 800 | ✅ Solved | [📝 Code](./800_rated/71A_Way_Too_Long_Words.cpp) | `strings` |
+| 3 | [231A - Team](https://codeforces.com/problemset/problem/231/A) | 800 | ✅ Solved | [📝 Code](./800_rated/231A_Team.cpp) | `brute force`, `greedy` |### ⚡ Quick Setup
 ```bash
 # Clone the repository
 git clone https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME.git
