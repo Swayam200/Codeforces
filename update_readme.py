@@ -203,8 +203,10 @@ class CodeforcesReadmeUpdater:
             readme_content
         )
         
-        # Update statistics dashboard
-        stats_section = f"""### 🏆 Statistics Dashboard
+        # Update statistics dashboard - FIXED REGEX PATTERN
+        stats_section = f"""<div align="center">
+
+### 🏆 Statistics Dashboard
 
 | Metric | Count | Progress |
 |--------|-------|----------|
@@ -213,12 +215,22 @@ class CodeforcesReadmeUpdater:
 | **900-Rated** | {stats['by_rating'].get('900', 0)} | {'✅' if stats['by_rating'].get('900', 0) > 0 else '⏳'} |
 | **1000-Rated** | {stats['by_rating'].get('1000', 0)} | {'✅' if stats['by_rating'].get('1000', 0) > 0 else '⏳'} |
 | **1100-Rated** | {stats['by_rating'].get('1100', 0)} | {'✅' if stats['by_rating'].get('1100', 0) > 0 else '⏳'} |
-| **Current Streak** | {stats['current_streak']} days | 🔥 |"""
+| **Current Streak** | {stats['current_streak']} days | 🔥 |
+
+</div>"""
         
-        # Replace statistics section
+        # Replace the entire statistics section - FIXED PATTERN
         readme_content = re.sub(
-            r'### 🏆 Statistics Dashboard.*?\n\n',
-            stats_section + '\n\n',
+            r'<div align="center">\s*### 🏆 Statistics Dashboard.*?</div>',
+            stats_section,
+            readme_content,
+            flags=re.DOTALL
+        )
+        
+        # Remove Learning Journey section entirely
+        readme_content = re.sub(
+            r'## 📈 Learning Journey.*?(?=## |---\n\n## |\Z)',
+            '',
             readme_content,
             flags=re.DOTALL
         )
@@ -239,11 +251,11 @@ class CodeforcesReadmeUpdater:
             table = self.generate_problem_table(problems_api, local_solutions, rating)
             
             # Find and replace the specific rating section
-            pattern = f'### 🟢 {rating}-Rated Problems.*?(?=### |$)'
+            pattern = f'### 🟢 {rating}-Rated Problems.*?(?=### |## |$)'
             if rating == '900':
-                pattern = f'### 🔵 {rating}-Rated Problems.*?(?=### |$)'
+                pattern = f'### 🔵 {rating}-Rated Problems.*?(?=### |## |$)'
             elif rating == '1000':
-                pattern = f'### 🟡 {rating}-Rated Problems.*?(?=### |$)'
+                pattern = f'### 🟡 {rating}-Rated Problems.*?(?=### |## |$)'
             
             replacement = f"""### {'🟢' if rating == '800' else '🔵' if rating == '900' else '🟡'} {rating}-Rated Problems
 
@@ -263,6 +275,9 @@ class CodeforcesReadmeUpdater:
             f'Last updated: <strong>{current_date}</strong>',
             readme_content
         )
+        
+        # Clean up any extra blank lines
+        readme_content = re.sub(r'\n{3,}', '\n\n', readme_content)
         
         # Write updated README
         with open(self.readme_path, 'w', encoding='utf-8') as f:
