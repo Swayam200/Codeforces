@@ -4,7 +4,7 @@
 
 ![Codeforces](https://img.shields.io/badge/Codeforces-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white)
 ![C++](https://img.shields.io/badge/C++17-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-![Problems Solved](https://img.shields.io/badge/Problems%20Solved-9-success?style=for-the-badge)
+![Problems Solved](https://img.shields.io/badge/Problems%20Solved-10-success?style=for-the-badge)
 ![GitHub repo size](https://img.shields.io/github/repo-size/swayam200/Codeforces?style=for-the-badge)
 
 </div>
@@ -29,8 +29,8 @@ This repository chronicles my adventure through competitive programming, where I
 
 | Metric | Count | Progress |
 |--------|-------|----------|
-| **Total Problems** | 9 | 🟩🟩🟩🟩🟩 |
-| **800-Rated** | 9 | ✅ |
+| **Total Problems** | 10 | 🟩🟩🟩🟩🟩 |
+| **800-Rated** | 10 | ✅ |
 | **900-Rated** | 0 | ⏳ |
 | **1000-Rated** | 0 | ⏳ |
 | **1100-Rated** | 0 | ⏳ |
@@ -56,7 +56,8 @@ This repository chronicles my adventure through competitive programming, where I
     ├── 📄 158A_Next_Round.cpp
     ├── 📄 263A_Beautiful_Matrix.cpp
     ├── 📄 339A_Helpful_Maths.cpp
-    └── 📄 50A_Domino_Piling.cpp
+    ├── 📄 50A_Domino_Piling.cpp
+    └── 📄 236A_Boy_or_Girl.cpp
 ├── 📄 update_readme.py
 └── 📄 README.md
 ```
@@ -77,7 +78,8 @@ This repository chronicles my adventure through competitive programming, where I
 | 6 | [158A - Next Round](https://codeforces.com/problemset/problem/158/A) | 800 | ✅ Solved | [📝 Code](./800_rated/158A_Next_Round.cpp) | `*special`, `implementation` |
 | 7 | [263A - Beautiful Matrix](https://codeforces.com/problemset/problem/263/A) | 800 | ✅ Solved | [📝 Code](./800_rated/263A_Beautiful_Matrix.cpp) | `implementation` |
 | 8 | [339A - Helpful Maths](https://codeforces.com/problemset/problem/339/A) | 800 | ✅ Solved | [📝 Code](./800_rated/339A_Helpful_Maths.cpp) | `greedy`, `implementation`, `sortings` |
-| 9 | [50A - Domino piling](https://codeforces.com/problemset/problem/50/A) | 800 | ✅ Solved | [📝 Code](./800_rated/50A_Domino_Piling.cpp) | `greedy`, `math` |### ⚡ Quick Setup
+| 9 | [50A - Domino piling](https://codeforces.com/problemset/problem/50/A) | 800 | ✅ Solved | [📝 Code](./800_rated/50A_Domino_Piling.cpp) | `greedy`, `math` |
+| 10 | [236A - Boy or Girl](https://codeforces.com/problemset/problem/236/A) | 800 | ✅ Solved | [📝 Code](./800_rated/236A_Boy_or_Girl.cpp) | `brute force`, `implementation`, `strings` |### ⚡ Quick Setup
 ```bash
 # Clone the repository
 git clone https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME.git
