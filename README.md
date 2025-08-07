@@ -79,7 +79,7 @@ This repository chronicles my adventure through competitive programming, where I
 | 2 | [4A - Watermelon](https://codeforces.com/problemset/problem/4/A) | 800 | ✅ Solved | [📝 Code](./800_rated/4A_Watermelon.cpp) | `brute force`, `math` |
 | 3 | [71A - Way Too Long Words](https://codeforces.com/problemset/problem/71/A) | 800 | ✅ Solved | [📝 Code](./800_rated/71A_Way_Too_Long_Words.cpp) | `strings` |
 | 4 | [231A - Team](https://codeforces.com/problemset/problem/231/A) | 800 | ✅ Solved | [📝 Code](./800_rated/231A_Team.cpp) | `brute force`, `greedy` |
-| 5 | [266A - Stones On The Table](https://codeforces.com/problemset/problem/266/A) | 800 | ✅ Solved | [📝 Code](./800_rated/266A_Stones_On_The_Table.cpp) | `implementation` |
+| 5 | [266A - Stones on the Table](https://codeforces.com/problemset/problem/266/A) | 800 | ✅ Solved | [📝 Code](./800_rated/266A_Stones_On_The_Table.cpp) | `implementation` |
 | 6 | [112A - Petya and Strings](https://codeforces.com/problemset/problem/112/A) | 800 | ✅ Solved | [📝 Code](./800_rated/112A_Petya_&_Strings.cpp) | `implementation`, `strings` |
 | 7 | [158A - Next Round](https://codeforces.com/problemset/problem/158/A) | 800 | ✅ Solved | [📝 Code](./800_rated/158A_Next_Round.cpp) | `*special`, `implementation` |
 | 8 | [263A - Beautiful Matrix](https://codeforces.com/problemset/problem/263/A) | 800 | ✅ Solved | [📝 Code](./800_rated/263A_Beautiful_Matrix.cpp) | `implementation` |
