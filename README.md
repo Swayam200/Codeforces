@@ -4,7 +4,7 @@
 
 ![Codeforces](https://img.shields.io/badge/Codeforces-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white)
 ![C++](https://img.shields.io/badge/C++17-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-![Problems Solved](https://img.shields.io/badge/Problems%20Solved-16-success?style=for-the-badge)
+![Problems Solved](https://img.shields.io/badge/Problems%20Solved-17-success?style=for-the-badge)
 ![GitHub repo size](https://img.shields.io/github/repo-size/swayam200/Codeforces?style=for-the-badge)
 
 </div>
@@ -29,8 +29,8 @@ This repository chronicles my adventure through competitive programming, where I
 
 | Metric | Count | Progress |
 |--------|-------|----------|
-| **Total Problems** | 16 | 🟩🟩🟩🟩🟩 |
-| **800-Rated** | 15 | ✅ |
+| **Total Problems** | 17 | 🟩🟩🟩🟩🟩 |
+| **800-Rated** | 16 | ✅ |
 | **900-Rated** | 1 | ✅ |
 | **1000-Rated** | 0 | ⏳ |
 | **1100-Rated** | 0 | ⏳ |
@@ -57,6 +57,7 @@ This repository chronicles my adventure through competitive programming, where I
 │   ├── 📄 112A_Petya_&_Strings.cpp
 │   ├── 📄 158A_Next_Round.cpp
 │   ├── 📄 263A_Beautiful_Matrix.cpp
+│   ├── 📄 59A_Word.cpp
 │   ├── 📄 617A_Elephant.cpp
 │   ├── 📄 339A_Helpful_Maths.cpp
 │   ├── 📄 791A_Bear_&_Big_Brother.cpp
@@ -86,12 +87,13 @@ This repository chronicles my adventure through competitive programming, where I
 | 7 | [112A - Petya and Strings](https://codeforces.com/problemset/problem/112/A) | 800 | ✅ Solved | [📝 Code](./800_rated/112A_Petya_&_Strings.cpp) | `implementation`, `strings` |
 | 8 | [158A - Next Round](https://codeforces.com/problemset/problem/158/A) | 800 | ✅ Solved | [📝 Code](./800_rated/158A_Next_Round.cpp) | `*special`, `implementation` |
 | 9 | [263A - Beautiful Matrix](https://codeforces.com/problemset/problem/263/A) | 800 | ✅ Solved | [📝 Code](./800_rated/263A_Beautiful_Matrix.cpp) | `implementation` |
-| 10 | [617A - Elephant](https://codeforces.com/problemset/problem/617/A) | 800 | ✅ Solved | [📝 Code](./800_rated/617A_Elephant.cpp) | `math` |
-| 11 | [339A - Helpful Maths](https://codeforces.com/problemset/problem/339/A) | 800 | ✅ Solved | [📝 Code](./800_rated/339A_Helpful_Maths.cpp) | `greedy`, `implementation`, `sortings` |
-| 12 | [791A - Bear and Big Brother](https://codeforces.com/problemset/problem/791/A) | 800 | ✅ Solved | [📝 Code](./800_rated/791A_Bear_&_Big_Brother.cpp) | `implementation` |
-| 13 | [50A - Domino piling](https://codeforces.com/problemset/problem/50/A) | 800 | ✅ Solved | [📝 Code](./800_rated/50A_Domino_Piling.cpp) | `greedy`, `math` |
-| 14 | [236A - Boy or Girl](https://codeforces.com/problemset/problem/236/A) | 800 | ✅ Solved | [📝 Code](./800_rated/236A_Boy_or_Girl.cpp) | `brute force`, `implementation`, `strings` |
-| 15 | [281A - Word Capitalization](https://codeforces.com/problemset/problem/281/A) | 800 | ✅ Solved | [📝 Code](./800_rated/281A_Word_Capitalization.cpp) | `implementation`, `strings` |### ⚡ Quick Setup
+| 10 | [59A - Word](https://codeforces.com/problemset/problem/59/A) | 800 | ✅ Solved | [📝 Code](./800_rated/59A_Word.cpp) | `implementation`, `strings` |
+| 11 | [617A - Elephant](https://codeforces.com/problemset/problem/617/A) | 800 | ✅ Solved | [📝 Code](./800_rated/617A_Elephant.cpp) | `math` |
+| 12 | [339A - Helpful Maths](https://codeforces.com/problemset/problem/339/A) | 800 | ✅ Solved | [📝 Code](./800_rated/339A_Helpful_Maths.cpp) | `greedy`, `implementation`, `sortings` |
+| 13 | [791A - Bear and Big Brother](https://codeforces.com/problemset/problem/791/A) | 800 | ✅ Solved | [📝 Code](./800_rated/791A_Bear_&_Big_Brother.cpp) | `implementation` |
+| 14 | [50A - Domino piling](https://codeforces.com/problemset/problem/50/A) | 800 | ✅ Solved | [📝 Code](./800_rated/50A_Domino_Piling.cpp) | `greedy`, `math` |
+| 15 | [236A - Boy or Girl](https://codeforces.com/problemset/problem/236/A) | 800 | ✅ Solved | [📝 Code](./800_rated/236A_Boy_or_Girl.cpp) | `brute force`, `implementation`, `strings` |
+| 16 | [281A - Word Capitalization](https://codeforces.com/problemset/problem/281/A) | 800 | ✅ Solved | [📝 Code](./800_rated/281A_Word_Capitalization.cpp) | `implementation`, `strings` |### ⚡ Quick Setup
 ```bash
 # Clone the repository
 git clone https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME.git
