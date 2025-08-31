@@ -4,7 +4,7 @@
 
 ![Codeforces](https://img.shields.io/badge/Codeforces-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white)
 ![C++](https://img.shields.io/badge/C++17-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-![Problems Solved](https://img.shields.io/badge/Problems%20Solved-26-success?style=for-the-badge)
+![Problems Solved](https://img.shields.io/badge/Problems%20Solved-27-success?style=for-the-badge)
 ![GitHub repo size](https://img.shields.io/github/repo-size/swayam200/Codeforces?style=for-the-badge)
 
 </div>
@@ -29,8 +29,8 @@ This repository chronicles my adventure through competitive programming, where I
 
 | Metric | Count | Progress |
 |--------|-------|----------|
-| **Total Problems** | 26 | 🟩🟩🟩🟩🟩 |
-| **800-Rated** | 25 | ✅ |
+| **Total Problems** | 27 | 🟩🟩🟩🟩🟩 |
+| **800-Rated** | 26 | ✅ |
 | **900-Rated** | 1 | ✅ |
 | **1000-Rated** | 0 | ⏳ |
 | **1100-Rated** | 0 | ⏳ |
@@ -56,6 +56,7 @@ This repository chronicles my adventure through competitive programming, where I
 │   ├── 📄 231A_Team.cpp
 │   ├── 📄 59A_Word.cpp
 │   ├── 📄 281A_Word_Capitalization.cpp
+│   ├── 📄 468A_Calculating_Function.cpp
 │   ├── 📄 71A_Way_Too_Long_Words.cpp
 │   ├── 📄 158A_Next_Round.cpp
 │   ├── 📄 677A_Vanya_and_Fence.cpp
@@ -95,23 +96,24 @@ This repository chronicles my adventure through competitive programming, where I
 | 6 | [231A - Team](https://codeforces.com/problemset/problem/231/A) | 800 | ✅ Solved | [📝 Code](./800_rated/231A_Team.cpp) | `brute force`, `greedy` |
 | 7 | [59A - Word](https://codeforces.com/problemset/problem/59/A) | 800 | ✅ Solved | [📝 Code](./800_rated/59A_Word.cpp) | `implementation`, `strings` |
 | 8 | [281A - Word Capitalization](https://codeforces.com/problemset/problem/281/A) | 800 | ✅ Solved | [📝 Code](./800_rated/281A_Word_Capitalization.cpp) | `implementation`, `strings` |
-| 9 | [71A - Way Too Long Words](https://codeforces.com/problemset/problem/71/A) | 800 | ✅ Solved | [📝 Code](./800_rated/71A_Way_Too_Long_Words.cpp) | `strings` |
-| 10 | [158A - Next Round](https://codeforces.com/problemset/problem/158/A) | 800 | ✅ Solved | [📝 Code](./800_rated/158A_Next_Round.cpp) | `*special`, `implementation` |
-| 11 | [677A - Vanya and Fence](https://codeforces.com/problemset/problem/677/A) | 800 | ✅ Solved | [📝 Code](./800_rated/677A_Vanya_and_Fence.cpp) | `implementation` |
-| 12 | [734A - Anton and Danik](https://codeforces.com/problemset/problem/734/A) | 800 | ✅ Solved | [📝 Code](./800_rated/734A_Anton_and_Danik.cpp) | `implementation`, `strings` |
-| 13 | [339A - Helpful Maths](https://codeforces.com/problemset/problem/339/A) | 800 | ✅ Solved | [📝 Code](./800_rated/339A_Helpful_Maths.cpp) | `greedy`, `implementation`, `sortings` |
-| 14 | [266B - Queue at the School](https://codeforces.com/problemset/problem/266/B) | 800 | ✅ Solved | [📝 Code](./800_rated/266B_Queue_at_the_School.cpp) | `constructive algorithms`, `graph matchings`, `implementation` |
-| 15 | [112A - Petya and Strings](https://codeforces.com/problemset/problem/112/A) | 800 | ✅ Solved | [📝 Code](./800_rated/112A_Petya_&_Strings.cpp) | `implementation`, `strings` |
-| 16 | [977A - Wrong Subtraction](https://codeforces.com/problemset/problem/977/A) | 800 | ✅ Solved | [📝 Code](./800_rated/977A_Wrong_Subtraction.cpp) | `implementation` |
-| 17 | [50A - Domino piling](https://codeforces.com/problemset/problem/50/A) | 800 | ✅ Solved | [📝 Code](./800_rated/50A_Domino_Piling.cpp) | `greedy`, `math` |
-| 18 | [467A - George and Accommodation](https://codeforces.com/problemset/problem/467/A) | 800 | ✅ Solved | [📝 Code](./800_rated/467A_George_and_Accomodation.cpp) | `implementation` |
-| 19 | [4A - Watermelon](https://codeforces.com/problemset/problem/4/A) | 800 | ✅ Solved | [📝 Code](./800_rated/4A_Watermelon.cpp) | `brute force`, `math` |
-| 20 | [110A - Nearly Lucky Number](https://codeforces.com/problemset/problem/110/A) | 800 | ✅ Solved | [📝 Code](./800_rated/110A_Nearly_Lucky_Number.cpp) | `implementation` |
-| 21 | [546A - Soldier and Bananas](https://codeforces.com/problemset/problem/546/A) | 800 | ✅ Solved | [📝 Code](./800_rated/546A_Soldier_and_Bananas.cpp) | `brute force`, `implementation`, `math` |
-| 22 | [266A - Stones on the Table](https://codeforces.com/problemset/problem/266/A) | 800 | ✅ Solved | [📝 Code](./800_rated/266A_Stones_On_The_Table.cpp) | `implementation` |
-| 23 | [1030A - In Search of an Easy Problem](https://codeforces.com/problemset/problem/1030/A) | 800 | ✅ Solved | [📝 Code](./800_rated/1030A_In_Search_of_an_Easy_Problem.cpp) | `implementation` |
-| 24 | [791A - Bear and Big Brother](https://codeforces.com/problemset/problem/791/A) | 800 | ✅ Solved | [📝 Code](./800_rated/791A_Bear_&_Big_Brother.cpp) | `implementation` |
-| 25 | [263A - Beautiful Matrix](https://codeforces.com/problemset/problem/263/A) | 800 | ✅ Solved | [📝 Code](./800_rated/263A_Beautiful_Matrix.cpp) | `implementation` |### ⚡ Quick Setup
+| 9 | [468A - Calculating Function](https://codeforces.com/problemset/problem/468/A) | 800 | ✅ Solved | [📝 Code](./800_rated/468A_Calculating_Function.cpp) | `implementation` |
+| 10 | [71A - Way Too Long Words](https://codeforces.com/problemset/problem/71/A) | 800 | ✅ Solved | [📝 Code](./800_rated/71A_Way_Too_Long_Words.cpp) | `strings` |
+| 11 | [158A - Next Round](https://codeforces.com/problemset/problem/158/A) | 800 | ✅ Solved | [📝 Code](./800_rated/158A_Next_Round.cpp) | `*special`, `implementation` |
+| 12 | [677A - Vanya and Fence](https://codeforces.com/problemset/problem/677/A) | 800 | ✅ Solved | [📝 Code](./800_rated/677A_Vanya_and_Fence.cpp) | `implementation` |
+| 13 | [734A - Anton and Danik](https://codeforces.com/problemset/problem/734/A) | 800 | ✅ Solved | [📝 Code](./800_rated/734A_Anton_and_Danik.cpp) | `implementation`, `strings` |
+| 14 | [339A - Helpful Maths](https://codeforces.com/problemset/problem/339/A) | 800 | ✅ Solved | [📝 Code](./800_rated/339A_Helpful_Maths.cpp) | `greedy`, `implementation`, `sortings` |
+| 15 | [266B - Queue at the School](https://codeforces.com/problemset/problem/266/B) | 800 | ✅ Solved | [📝 Code](./800_rated/266B_Queue_at_the_School.cpp) | `constructive algorithms`, `graph matchings`, `implementation` |
+| 16 | [112A - Petya and Strings](https://codeforces.com/problemset/problem/112/A) | 800 | ✅ Solved | [📝 Code](./800_rated/112A_Petya_&_Strings.cpp) | `implementation`, `strings` |
+| 17 | [977A - Wrong Subtraction](https://codeforces.com/problemset/problem/977/A) | 800 | ✅ Solved | [📝 Code](./800_rated/977A_Wrong_Subtraction.cpp) | `implementation` |
+| 18 | [50A - Domino piling](https://codeforces.com/problemset/problem/50/A) | 800 | ✅ Solved | [📝 Code](./800_rated/50A_Domino_Piling.cpp) | `greedy`, `math` |
+| 19 | [467A - George and Accommodation](https://codeforces.com/problemset/problem/467/A) | 800 | ✅ Solved | [📝 Code](./800_rated/467A_George_and_Accomodation.cpp) | `implementation` |
+| 20 | [4A - Watermelon](https://codeforces.com/problemset/problem/4/A) | 800 | ✅ Solved | [📝 Code](./800_rated/4A_Watermelon.cpp) | `brute force`, `math` |
+| 21 | [110A - Nearly Lucky Number](https://codeforces.com/problemset/problem/110/A) | 800 | ✅ Solved | [📝 Code](./800_rated/110A_Nearly_Lucky_Number.cpp) | `implementation` |
+| 22 | [546A - Soldier and Bananas](https://codeforces.com/problemset/problem/546/A) | 800 | ✅ Solved | [📝 Code](./800_rated/546A_Soldier_and_Bananas.cpp) | `brute force`, `implementation`, `math` |
+| 23 | [266A - Stones on the Table](https://codeforces.com/problemset/problem/266/A) | 800 | ✅ Solved | [📝 Code](./800_rated/266A_Stones_On_The_Table.cpp) | `implementation` |
+| 24 | [1030A - In Search of an Easy Problem](https://codeforces.com/problemset/problem/1030/A) | 800 | ✅ Solved | [📝 Code](./800_rated/1030A_In_Search_of_an_Easy_Problem.cpp) | `implementation` |
+| 25 | [791A - Bear and Big Brother](https://codeforces.com/problemset/problem/791/A) | 800 | ✅ Solved | [📝 Code](./800_rated/791A_Bear_&_Big_Brother.cpp) | `implementation` |
+| 26 | [263A - Beautiful Matrix](https://codeforces.com/problemset/problem/263/A) | 800 | ✅ Solved | [📝 Code](./800_rated/263A_Beautiful_Matrix.cpp) | `implementation` |### ⚡ Quick Setup
 ```bash
 # Clone the repository
 git clone https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME.git
