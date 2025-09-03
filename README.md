@@ -4,7 +4,7 @@
 
 ![Codeforces](https://img.shields.io/badge/Codeforces-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white)
 ![C++](https://img.shields.io/badge/C++17-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-![Problems Solved](https://img.shields.io/badge/Problems%20Solved-27-success?style=for-the-badge)
+![Problems Solved](https://img.shields.io/badge/Problems%20Solved-28-success?style=for-the-badge)
 ![GitHub repo size](https://img.shields.io/github/repo-size/swayam200/Codeforces?style=for-the-badge)
 
 </div>
@@ -29,9 +29,9 @@ This repository chronicles my adventure through competitive programming, where I
 
 | Metric | Count | Progress |
 |--------|-------|----------|
-| **Total Problems** | 27 | 🟩🟩🟩🟩🟩 |
+| **Total Problems** | 28 | 🟩🟩🟩🟩🟩 |
 | **800-Rated** | 26 | ✅ |
-| **900-Rated** | 1 | ✅ |
+| **900-Rated** | 2 | ✅ |
 | **1000-Rated** | 0 | ⏳ |
 | **1100-Rated** | 0 | ⏳ |
 | **Current Streak** | 7 days | 🔥 |
@@ -75,6 +75,7 @@ This repository chronicles my adventure through competitive programming, where I
 │   ├── 📄 791A_Bear_&_Big_Brother.cpp
 │   └── 📄 263A_Beautiful_Matrix.cpp
 └── 📂 900_rated/
+    ├── 📄 160A_Twins.cpp
     └── 📄 96A_Football.cpp
 ├── 📄 update_readme.py
 └── 📄 README.md
