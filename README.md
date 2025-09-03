@@ -166,5 +166,5 @@ g++ -std=c++17 -O2 -o solution 800_Rated/4A_Watermelon.cpp
 ---
 
 <div align="center">
-<sub>Last updated: <strong>August 2025</strong> | Made with ❤️ and lots of ☕</sub>
+<sub>Last updated: <strong>September 2025</strong> | Made with ❤️ and lots of ☕</sub>
 </div>
