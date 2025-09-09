@@ -65,23 +65,47 @@ class CodeforcesReadmeUpdater:
                 continue
             rating = rating_dir.name.split('_')[0]
             solutions[rating] = []
+            
             # Look for C++, Python, and Java files
             for ext in ['*.cpp', '*.py', '*.java']:
                 for solution_file in rating_dir.glob(ext):
-                    match = re.match(r'(\d+)([A-Z])_(.+)\.(cpp|py|java)', solution_file.name)
+                    # Enhanced regex to handle various naming patterns
+                    file_name = solution_file.name
+                    
+                    # Pattern 1: Standard format (e.g., 133A-HQ9.py, 318A-Even-Odds.cpp)
+                    match = re.match(r'(\d+)([A-Z])[-_](.+)\.(cpp|py|java)', file_name)
+                    if not match:
+                        # Pattern 2: With underscores (e.g., 344A_Magnets.cpp)
+                        match = re.match(r'(\d+)([A-Z])_(.+)\.(cpp|py|java)', file_name)
+                    if not match:
+                        # Pattern 3: Simple format (e.g., 4A_Watermelon.cpp)
+                        match = re.match(r'(\d+)([A-Z])_(.+)\.(cpp|py|java)', file_name)
+                    
                     if match:
                         contest_id, index, name, file_ext = match.groups()
+                        # Clean up the name
+                        clean_name = name.replace('_', ' ').replace('-', ' ').strip()
                         solutions[rating].append({
                             'contest_id': contest_id,
                             'index': index,
-                            'name': name.replace('_', ' '),
+                            'name': clean_name,
                             'file_path': str(solution_file.relative_to(self.repo_path)),
-                            'extension': file_ext
+                            'extension': file_ext,
+                            'full_filename': file_name
                         })
-        # Ensure 900_rated is present in solutions even if empty or missing
-        if '900' not in solutions:
-            solutions['900'] = []
+                    else:
+                        print(f"Warning: Could not parse filename: {file_name}")
         
+        # Sort solutions within each rating by contest_id and index
+        for rating in solutions:
+            solutions[rating].sort(key=lambda x: (int(x['contest_id']), x['index']))
+        
+        # Ensure common ratings are present even if empty
+        for rating in ['800', '900', '1000', '1100']:
+            if rating not in solutions:
+                solutions[rating] = []
+        
+        print(f"Debug: Found solutions: {[(rating, len(probs)) for rating, probs in solutions.items()]}")
         return solutions
     
     def generate_progress_stats(self, local_solutions):
@@ -116,22 +140,31 @@ class CodeforcesReadmeUpdater:
             "│       └── 📄 update-readme.yml"
         ]
         
-        # Add rating directories
-        rating_dirs = sorted(local_solutions.keys(), key=int)
+        # Add rating directories with files (only non-empty directories)
+        rating_dirs = sorted([r for r in local_solutions.keys() if local_solutions[r]], key=int)
+        
         for i, rating in enumerate(rating_dirs):
             is_last_dir = (i == len(rating_dirs) - 1)
             prefix = "└──" if is_last_dir else "├──"
             structure_lines.append(f"{prefix} 📂 {rating}_rated/")
             
-            # Add files in directory
-            for j, solution in enumerate(local_solutions[rating]):
-                is_last_file = (j == len(local_solutions[rating]) - 1)
+            # Add files in directory (limit to first few files to keep structure readable)
+            solutions = local_solutions[rating][:10]  # Limit to first 10 files
+            for j, solution in enumerate(solutions):
+                is_last_file = (j == len(solutions) - 1)
                 if is_last_dir:
                     file_prefix = "    └──" if is_last_file else "    ├──"
                 else:
                     file_prefix = "│   └──" if is_last_file else "│   ├──"
-                filename = Path(solution['file_path']).name
+                filename = solution['full_filename']
                 structure_lines.append(f"{file_prefix} 📄 {filename}")
+            
+            # Add "..." if there are more files
+            if len(local_solutions[rating]) > 10:
+                if is_last_dir:
+                    structure_lines.append("    └── ...")
+                else:
+                    structure_lines.append("│   └── ...")
         
         # Add root files
         structure_lines.extend([
@@ -164,6 +197,8 @@ class CodeforcesReadmeUpdater:
             # Use default values if API data not available
             if matching_problem:
                 tags_str = ", ".join([f"`{tag}`" for tag in matching_problem['tags'][:3]])
+                if not tags_str:  # If no tags available
+                    tags_str = "`implementation`"
                 problem_name = matching_problem['name']
                 problem_url = matching_problem['url']
             else:
@@ -206,7 +241,7 @@ class CodeforcesReadmeUpdater:
             readme_content
         )
         
-        # Update statistics dashboard - FIXED REGEX PATTERN
+        # Update statistics dashboard
         stats_section = f"""<div align="center">
 
 ### 🏆 Statistics Dashboard
@@ -222,7 +257,7 @@ class CodeforcesReadmeUpdater:
 
 </div>"""
         
-        # Replace the entire statistics section - FIXED PATTERN
+        # Replace the entire statistics section
         readme_content = re.sub(
             r'<div align="center">\s*### 🏆 Statistics Dashboard.*?</div>',
             stats_section,
@@ -254,19 +289,43 @@ class CodeforcesReadmeUpdater:
             table = self.generate_problem_table(problems_api, local_solutions, rating)
             
             # Find and replace the specific rating section
-            pattern = f'### 🟢 {rating}-Rated Problems.*?(?=### |## |$)'
-            if rating == '900':
+            if rating == '800':
+                pattern = f'### 🟢 {rating}-Rated Problems.*?(?=### |## |$)'
+                replacement = f"""### 🟢 {rating}-Rated Problems
+
+{table}"""
+            elif rating == '900':
                 pattern = f'### 🔵 {rating}-Rated Problems.*?(?=### |## |$)'
+                replacement = f"""### 🔵 {rating}-Rated Problems
+
+{table}"""
             elif rating == '1000':
                 pattern = f'### 🟡 {rating}-Rated Problems.*?(?=### |## |$)'
-            
-            replacement = f"""### {'🟢' if rating == '800' else '🔵' if rating == '900' else '🟡'} {rating}-Rated Problems
+                replacement = f"""### 🟡 {rating}-Rated Problems
 
 {table}"""
             
             readme_content = re.sub(
                 pattern,
                 replacement,
+                readme_content,
+                flags=re.DOTALL
+            )
+        
+        # Add 900-rated section if it doesn't exist
+        if '### 🔵 900-Rated Problems' not in readme_content:
+            # Find where to insert the 900-rated section (after 800-rated)
+            pattern = r'(### 🟢 800-Rated Problems.*?)(\n### |\n## |\Z)'
+            table_900 = self.generate_problem_table(problems_api, local_solutions, '900')
+            section_900 = f"""
+
+### 🔵 900-Rated Problems
+
+{table_900}"""
+            
+            readme_content = re.sub(
+                pattern,
+                r'\1' + section_900 + r'\2',
                 readme_content,
                 flags=re.DOTALL
             )
