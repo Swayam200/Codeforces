@@ -121,8 +121,7 @@ g++ -std=c++17 -O2 -o solution 800_Rated/4A_Watermelon.cpp
 | 1 | [96A - Football](https://codeforces.com/problemset/problem/96/A) | 900 | ✅ Solved | [📝 Code](./900_rated/96A_Football.cpp) | `implementation`, `strings` |
 | 2 | [133A - HQ9+](https://codeforces.com/problemset/problem/133/A) | 900 | ✅ Solved | [📝 Code](./900_rated/133A-HQ9.py) | `implementation` |
 | 3 | [160A - Twins](https://codeforces.com/problemset/problem/160/A) | 900 | ✅ Solved | [📝 Code](./900_rated/160A_Twins.cpp) | `greedy`, `sortings` |
-| 4 | [318A - Even Odds](https://codeforces.com/problemset/problem/318/A) | 900 | ✅ Solved | [📝 Code](./900_rated/318A-Even-Odds.cpp) | `math` |
-## 🌟 GitHub Activity
+| 4 | [318A - Even Odds](https://codeforces.com/problemset/problem/318/A) | 900 | ✅ Solved | [📝 Code](./900_rated/318A-Even-Odds.cpp) | `math` |## 🌟 GitHub Activity
 
 <div align="center">
 
