@@ -4,7 +4,7 @@
 
 ![Codeforces](https://img.shields.io/badge/Codeforces-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white)
 ![C++](https://img.shields.io/badge/C++17-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-![Problems Solved](https://img.shields.io/badge/Problems%20Solved-28-success?style=for-the-badge)
+![Problems Solved](https://img.shields.io/badge/Problems%20Solved-30-success?style=for-the-badge)
 ![GitHub repo size](https://img.shields.io/github/repo-size/swayam200/Codeforces?style=for-the-badge)
 
 </div>
@@ -29,9 +29,9 @@ This repository chronicles my adventure through competitive programming, where I
 
 | Metric | Count | Progress |
 |--------|-------|----------|
-| **Total Problems** | 28 | 🟩🟩🟩🟩🟩 |
+| **Total Problems** | 30 | 🟩🟩🟩🟩🟩 |
 | **800-Rated** | 26 | ✅ |
-| **900-Rated** | 2 | ✅ |
+| **900-Rated** | 4 | ✅ |
 | **1000-Rated** | 0 | ⏳ |
 | **1100-Rated** | 0 | ⏳ |
 | **Current Streak** | 7 days | 🔥 |
@@ -48,35 +48,22 @@ This repository chronicles my adventure through competitive programming, where I
 │   └── 📂 workflows/
 │       └── 📄 update-readme.yml
 ├── 📂 800_rated/
-│   ├── 📄 344A_Magnets.cpp
-│   ├── 📄 236A_Boy_or_Girl.cpp
-│   ├── 📄 271A_Beautiful_Year.cpp
-│   ├── 📄 282A_Bit++.cpp
-│   ├── 📄 617A_Elephant.cpp
-│   ├── 📄 231A_Team.cpp
-│   ├── 📄 59A_Word.cpp
-│   ├── 📄 281A_Word_Capitalization.cpp
-│   ├── 📄 468A_Calculating_Function.cpp
-│   ├── 📄 71A_Way_Too_Long_Words.cpp
-│   ├── 📄 158A_Next_Round.cpp
-│   ├── 📄 677A_Vanya_and_Fence.cpp
-│   ├── 📄 734A_Anton_and_Danik.cpp
-│   ├── 📄 339A_Helpful_Maths.cpp
-│   ├── 📄 266B_Queue_at_the_School.cpp
-│   ├── 📄 112A_Petya_&_Strings.cpp
-│   ├── 📄 977A_Wrong_Subtraction.cpp
-│   ├── 📄 50A_Domino_Piling.cpp
-│   ├── 📄 467A_George_and_Accomodation.cpp
 │   ├── 📄 4A_Watermelon.cpp
+│   ├── 📄 50A_Domino_Piling.cpp
+│   ├── 📄 59A_Word.cpp
+│   ├── 📄 71A_Way_Too_Long_Words.cpp
 │   ├── 📄 110A_Nearly_Lucky_Number.cpp
-│   ├── 📄 546A_Soldier_and_Bananas.cpp
-│   ├── 📄 266A_Stones_On_The_Table.cpp
-│   ├── 📄 1030A_In_Search_of_an_Easy_Problem.cpp
-│   ├── 📄 791A_Bear_&_Big_Brother.cpp
+│   ├── 📄 112A_Petya_&_Strings.cpp
+│   ├── 📄 158A_Next_Round.cpp
+│   ├── 📄 231A_Team.cpp
+│   ├── 📄 236A_Boy_or_Girl.cpp
 │   └── 📄 263A_Beautiful_Matrix.cpp
+│   └── ...
 └── 📂 900_rated/
+    ├── 📄 96A_Football.cpp
+    ├── 📄 133A-HQ9.py
     ├── 📄 160A_Twins.cpp
-    └── 📄 96A_Football.cpp
+    └── 📄 318A-Even-Odds.cpp
 ├── 📄 update_readme.py
 └── 📄 README.md
 ```
@@ -89,32 +76,32 @@ This repository chronicles my adventure through competitive programming, where I
 
 | # | Problem | Difficulty | Status | Solution | Tags |
 |---|---------|------------|--------|----------|------|
-| 1 | [344A - Magnets](https://codeforces.com/problemset/problem/344/A) | 800 | ✅ Solved | [📝 Code](./800_rated/344A_Magnets.cpp) | `implementation` |
-| 2 | [236A - Boy or Girl](https://codeforces.com/problemset/problem/236/A) | 800 | ✅ Solved | [📝 Code](./800_rated/236A_Boy_or_Girl.cpp) | `brute force`, `implementation`, `strings` |
-| 3 | [271A - Beautiful Year](https://codeforces.com/problemset/problem/271/A) | 800 | ✅ Solved | [📝 Code](./800_rated/271A_Beautiful_Year.cpp) | `brute force` |
-| 4 | [282A - Bit++](https://codeforces.com/problemset/problem/282/A) | 800 | ✅ Solved | [📝 Code](./800_rated/282A_Bit++.cpp) | `implementation` |
-| 5 | [617A - Elephant](https://codeforces.com/problemset/problem/617/A) | 800 | ✅ Solved | [📝 Code](./800_rated/617A_Elephant.cpp) | `math` |
-| 6 | [231A - Team](https://codeforces.com/problemset/problem/231/A) | 800 | ✅ Solved | [📝 Code](./800_rated/231A_Team.cpp) | `brute force`, `greedy` |
-| 7 | [59A - Word](https://codeforces.com/problemset/problem/59/A) | 800 | ✅ Solved | [📝 Code](./800_rated/59A_Word.cpp) | `implementation`, `strings` |
-| 8 | [281A - Word Capitalization](https://codeforces.com/problemset/problem/281/A) | 800 | ✅ Solved | [📝 Code](./800_rated/281A_Word_Capitalization.cpp) | `implementation`, `strings` |
-| 9 | [468A - Calculating Function](https://codeforces.com/problemset/problem/468/A) | 800 | ✅ Solved | [📝 Code](./800_rated/468A_Calculating_Function.cpp) | `implementation` |
-| 10 | [71A - Way Too Long Words](https://codeforces.com/problemset/problem/71/A) | 800 | ✅ Solved | [📝 Code](./800_rated/71A_Way_Too_Long_Words.cpp) | `strings` |
-| 11 | [158A - Next Round](https://codeforces.com/problemset/problem/158/A) | 800 | ✅ Solved | [📝 Code](./800_rated/158A_Next_Round.cpp) | `*special`, `implementation` |
-| 12 | [677A - Vanya and Fence](https://codeforces.com/problemset/problem/677/A) | 800 | ✅ Solved | [📝 Code](./800_rated/677A_Vanya_and_Fence.cpp) | `implementation` |
-| 13 | [734A - Anton and Danik](https://codeforces.com/problemset/problem/734/A) | 800 | ✅ Solved | [📝 Code](./800_rated/734A_Anton_and_Danik.cpp) | `implementation`, `strings` |
-| 14 | [339A - Helpful Maths](https://codeforces.com/problemset/problem/339/A) | 800 | ✅ Solved | [📝 Code](./800_rated/339A_Helpful_Maths.cpp) | `greedy`, `implementation`, `sortings` |
-| 15 | [266B - Queue at the School](https://codeforces.com/problemset/problem/266/B) | 800 | ✅ Solved | [📝 Code](./800_rated/266B_Queue_at_the_School.cpp) | `constructive algorithms`, `graph matchings`, `implementation` |
-| 16 | [112A - Petya and Strings](https://codeforces.com/problemset/problem/112/A) | 800 | ✅ Solved | [📝 Code](./800_rated/112A_Petya_&_Strings.cpp) | `implementation`, `strings` |
-| 17 | [977A - Wrong Subtraction](https://codeforces.com/problemset/problem/977/A) | 800 | ✅ Solved | [📝 Code](./800_rated/977A_Wrong_Subtraction.cpp) | `implementation` |
-| 18 | [50A - Domino piling](https://codeforces.com/problemset/problem/50/A) | 800 | ✅ Solved | [📝 Code](./800_rated/50A_Domino_Piling.cpp) | `greedy`, `math` |
-| 19 | [467A - George and Accommodation](https://codeforces.com/problemset/problem/467/A) | 800 | ✅ Solved | [📝 Code](./800_rated/467A_George_and_Accomodation.cpp) | `implementation` |
-| 20 | [4A - Watermelon](https://codeforces.com/problemset/problem/4/A) | 800 | ✅ Solved | [📝 Code](./800_rated/4A_Watermelon.cpp) | `brute force`, `math` |
-| 21 | [110A - Nearly Lucky Number](https://codeforces.com/problemset/problem/110/A) | 800 | ✅ Solved | [📝 Code](./800_rated/110A_Nearly_Lucky_Number.cpp) | `implementation` |
-| 22 | [546A - Soldier and Bananas](https://codeforces.com/problemset/problem/546/A) | 800 | ✅ Solved | [📝 Code](./800_rated/546A_Soldier_and_Bananas.cpp) | `brute force`, `implementation`, `math` |
-| 23 | [266A - Stones on the Table](https://codeforces.com/problemset/problem/266/A) | 800 | ✅ Solved | [📝 Code](./800_rated/266A_Stones_On_The_Table.cpp) | `implementation` |
-| 24 | [1030A - In Search of an Easy Problem](https://codeforces.com/problemset/problem/1030/A) | 800 | ✅ Solved | [📝 Code](./800_rated/1030A_In_Search_of_an_Easy_Problem.cpp) | `implementation` |
-| 25 | [791A - Bear and Big Brother](https://codeforces.com/problemset/problem/791/A) | 800 | ✅ Solved | [📝 Code](./800_rated/791A_Bear_&_Big_Brother.cpp) | `implementation` |
-| 26 | [263A - Beautiful Matrix](https://codeforces.com/problemset/problem/263/A) | 800 | ✅ Solved | [📝 Code](./800_rated/263A_Beautiful_Matrix.cpp) | `implementation` |### ⚡ Quick Setup
+| 1 | [4A - Watermelon](https://codeforces.com/problemset/problem/4/A) | 800 | ✅ Solved | [📝 Code](./800_rated/4A_Watermelon.cpp) | `brute force`, `math` |
+| 2 | [50A - Domino piling](https://codeforces.com/problemset/problem/50/A) | 800 | ✅ Solved | [📝 Code](./800_rated/50A_Domino_Piling.cpp) | `greedy`, `math` |
+| 3 | [59A - Word](https://codeforces.com/problemset/problem/59/A) | 800 | ✅ Solved | [📝 Code](./800_rated/59A_Word.cpp) | `implementation`, `strings` |
+| 4 | [71A - Way Too Long Words](https://codeforces.com/problemset/problem/71/A) | 800 | ✅ Solved | [📝 Code](./800_rated/71A_Way_Too_Long_Words.cpp) | `strings` |
+| 5 | [110A - Nearly Lucky Number](https://codeforces.com/problemset/problem/110/A) | 800 | ✅ Solved | [📝 Code](./800_rated/110A_Nearly_Lucky_Number.cpp) | `implementation` |
+| 6 | [112A - Petya and Strings](https://codeforces.com/problemset/problem/112/A) | 800 | ✅ Solved | [📝 Code](./800_rated/112A_Petya_&_Strings.cpp) | `implementation`, `strings` |
+| 7 | [158A - Next Round](https://codeforces.com/problemset/problem/158/A) | 800 | ✅ Solved | [📝 Code](./800_rated/158A_Next_Round.cpp) | `*special`, `implementation` |
+| 8 | [231A - Team](https://codeforces.com/problemset/problem/231/A) | 800 | ✅ Solved | [📝 Code](./800_rated/231A_Team.cpp) | `brute force`, `greedy` |
+| 9 | [236A - Boy or Girl](https://codeforces.com/problemset/problem/236/A) | 800 | ✅ Solved | [📝 Code](./800_rated/236A_Boy_or_Girl.cpp) | `brute force`, `implementation`, `strings` |
+| 10 | [263A - Beautiful Matrix](https://codeforces.com/problemset/problem/263/A) | 800 | ✅ Solved | [📝 Code](./800_rated/263A_Beautiful_Matrix.cpp) | `implementation` |
+| 11 | [266A - Stones on the Table](https://codeforces.com/problemset/problem/266/A) | 800 | ✅ Solved | [📝 Code](./800_rated/266A_Stones_On_The_Table.cpp) | `implementation` |
+| 12 | [266B - Queue at the School](https://codeforces.com/problemset/problem/266/B) | 800 | ✅ Solved | [📝 Code](./800_rated/266B_Queue_at_the_School.cpp) | `constructive algorithms`, `graph matchings`, `implementation` |
+| 13 | [271A - Beautiful Year](https://codeforces.com/problemset/problem/271/A) | 800 | ✅ Solved | [📝 Code](./800_rated/271A_Beautiful_Year.cpp) | `brute force` |
+| 14 | [281A - Word Capitalization](https://codeforces.com/problemset/problem/281/A) | 800 | ✅ Solved | [📝 Code](./800_rated/281A_Word_Capitalization.cpp) | `implementation`, `strings` |
+| 15 | [282A - Bit++](https://codeforces.com/problemset/problem/282/A) | 800 | ✅ Solved | [📝 Code](./800_rated/282A_Bit++.cpp) | `implementation` |
+| 16 | [339A - Helpful Maths](https://codeforces.com/problemset/problem/339/A) | 800 | ✅ Solved | [📝 Code](./800_rated/339A_Helpful_Maths.cpp) | `greedy`, `implementation`, `sortings` |
+| 17 | [344A - Magnets](https://codeforces.com/problemset/problem/344/A) | 800 | ✅ Solved | [📝 Code](./800_rated/344A_Magnets.cpp) | `implementation` |
+| 18 | [467A - George and Accommodation](https://codeforces.com/problemset/problem/467/A) | 800 | ✅ Solved | [📝 Code](./800_rated/467A_George_and_Accomodation.cpp) | `implementation` |
+| 19 | [468A - Calculating Function](https://codeforces.com/problemset/problem/468/A) | 800 | ✅ Solved | [📝 Code](./800_rated/468A_Calculating_Function.cpp) | `implementation` |
+| 20 | [546A - Soldier and Bananas](https://codeforces.com/problemset/problem/546/A) | 800 | ✅ Solved | [📝 Code](./800_rated/546A_Soldier_and_Bananas.cpp) | `brute force`, `implementation`, `math` |
+| 21 | [617A - Elephant](https://codeforces.com/problemset/problem/617/A) | 800 | ✅ Solved | [📝 Code](./800_rated/617A_Elephant.cpp) | `math` |
+| 22 | [677A - Vanya and Fence](https://codeforces.com/problemset/problem/677/A) | 800 | ✅ Solved | [📝 Code](./800_rated/677A_Vanya_and_Fence.cpp) | `implementation` |
+| 23 | [734A - Anton and Danik](https://codeforces.com/problemset/problem/734/A) | 800 | ✅ Solved | [📝 Code](./800_rated/734A_Anton_and_Danik.cpp) | `implementation`, `strings` |
+| 24 | [791A - Bear and Big Brother](https://codeforces.com/problemset/problem/791/A) | 800 | ✅ Solved | [📝 Code](./800_rated/791A_Bear_&_Big_Brother.cpp) | `implementation` |
+| 25 | [977A - Wrong Subtraction](https://codeforces.com/problemset/problem/977/A) | 800 | ✅ Solved | [📝 Code](./800_rated/977A_Wrong_Subtraction.cpp) | `implementation` |
+| 26 | [1030A - In Search of an Easy Problem](https://codeforces.com/problemset/problem/1030/A) | 800 | ✅ Solved | [📝 Code](./800_rated/1030A_In_Search_of_an_Easy_Problem.cpp) | `implementation` |### ⚡ Quick Setup
 ```bash
 # Clone the repository
 git clone https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME.git
@@ -127,7 +114,14 @@ g++ -std=c++17 -O2 -o solution 800_Rated/4A_Watermelon.cpp
 
 ---
 
-## 🌟 GitHub Activity
+### 🔵 900-Rated Problems
+
+| # | Problem | Difficulty | Status | Solution | Tags |
+|---|---------|------------|--------|----------|------|
+| 1 | [96A - Football](https://codeforces.com/problemset/problem/96/A) | 900 | ✅ Solved | [📝 Code](./900_rated/96A_Football.cpp) | `implementation`, `strings` |
+| 2 | [133A - HQ9+](https://codeforces.com/problemset/problem/133/A) | 900 | ✅ Solved | [📝 Code](./900_rated/133A-HQ9.py) | `implementation` |
+| 3 | [160A - Twins](https://codeforces.com/problemset/problem/160/A) | 900 | ✅ Solved | [📝 Code](./900_rated/160A_Twins.cpp) | `greedy`, `sortings` |
+| 4 | [318A - Even Odds](https://codeforces.com/problemset/problem/318/A) | 900 | ✅ Solved | [📝 Code](./900_rated/318A-Even-Odds.cpp) | `math` |## 🌟 GitHub Activity
 
 <div align="center">
 
