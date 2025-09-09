@@ -59,15 +59,15 @@ class CodeforcesReadmeUpdater:
         """Scan local directories for solution files"""
         solutions = {}
         
-        # Scan all rating directories
+        # Scan all rating directories, only if they are directories
         for rating_dir in self.repo_path.glob("*_rated"):
+            if not rating_dir.is_dir():
+                continue
             rating = rating_dir.name.split('_')[0]
             solutions[rating] = []
-            
             # Look for C++, Python, and Java files
             for ext in ['*.cpp', '*.py', '*.java']:
                 for solution_file in rating_dir.glob(ext):
-                    # Extract problem info from filename (e.g., "4A_Watermelon.cpp")
                     match = re.match(r'(\d+)([A-Z])_(.+)\.(cpp|py|java)', solution_file.name)
                     if match:
                         contest_id, index, name, file_ext = match.groups()
@@ -78,6 +78,9 @@ class CodeforcesReadmeUpdater:
                             'file_path': str(solution_file.relative_to(self.repo_path)),
                             'extension': file_ext
                         })
+        # Ensure 900_rated is present in solutions even if empty or missing
+        if '900' not in solutions:
+            solutions['900'] = []
         
         return solutions
     
