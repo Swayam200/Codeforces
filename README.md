@@ -4,7 +4,7 @@
 
 ![Codeforces](https://img.shields.io/badge/Codeforces-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white)
 ![C++](https://img.shields.io/badge/C++17-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-![Problems Solved](https://img.shields.io/badge/Problems%20Solved-30-success?style=for-the-badge)
+![Problems Solved](https://img.shields.io/badge/Problems%20Solved-31-success?style=for-the-badge)
 ![GitHub repo size](https://img.shields.io/github/repo-size/swayam200/Codeforces?style=for-the-badge)
 
 </div>
@@ -29,9 +29,9 @@ This repository chronicles my adventure through competitive programming, where I
 
 | Metric | Count | Progress |
 |--------|-------|----------|
-| **Total Problems** | 30 | 🟩🟩🟩🟩🟩 |
+| **Total Problems** | 31 | 🟩🟩🟩🟩🟩 |
 | **800-Rated** | 26 | ✅ |
-| **900-Rated** | 4 | ✅ |
+| **900-Rated** | 5 | ✅ |
 | **1000-Rated** | 0 | ⏳ |
 | **1100-Rated** | 0 | ⏳ |
 | **Current Streak** | 7 days | 🔥 |
@@ -63,6 +63,7 @@ This repository chronicles my adventure through competitive programming, where I
     ├── 📄 96A_Football.cpp
     ├── 📄 133A-HQ9.py
     ├── 📄 160A_Twins.cpp
+    ├── 📄 208A-Dubstep.py
     └── 📄 318A-Even-Odds.cpp
 ├── 📄 update_readme.py
 └── 📄 README.md
@@ -121,7 +122,8 @@ g++ -std=c++17 -O2 -o solution 800_Rated/4A_Watermelon.cpp
 | 1 | [96A - Football](https://codeforces.com/problemset/problem/96/A) | 900 | ✅ Solved | [📝 Code](./900_rated/96A_Football.cpp) | `implementation`, `strings` |
 | 2 | [133A - HQ9+](https://codeforces.com/problemset/problem/133/A) | 900 | ✅ Solved | [📝 Code](./900_rated/133A-HQ9.py) | `implementation` |
 | 3 | [160A - Twins](https://codeforces.com/problemset/problem/160/A) | 900 | ✅ Solved | [📝 Code](./900_rated/160A_Twins.cpp) | `greedy`, `sortings` |
-| 4 | [318A - Even Odds](https://codeforces.com/problemset/problem/318/A) | 900 | ✅ Solved | [📝 Code](./900_rated/318A-Even-Odds.cpp) | `math` |## 🌟 GitHub Activity
+| 4 | [208A - Dubstep](https://codeforces.com/problemset/problem/208/A) | 900 | ✅ Solved | [📝 Code](./900_rated/208A-Dubstep.py) | `strings` |
+| 5 | [318A - Even Odds](https://codeforces.com/problemset/problem/318/A) | 900 | ✅ Solved | [📝 Code](./900_rated/318A-Even-Odds.cpp) | `math` |## 🌟 GitHub Activity
 
 <div align="center">
 
