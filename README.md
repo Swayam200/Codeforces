@@ -44,9 +44,6 @@ This repository chronicles my adventure through competitive programming, where I
 
 ```
 📁 Codeforces/
-├── 📂 .github/
-│   └── 📂 workflows/
-│       └── 📄 update-readme.yml
 ├── 📂 800_rated/
 │   ├── 📄 4A_Watermelon.cpp
 │   ├── 📄 50A_Domino_Piling.cpp
@@ -66,7 +63,6 @@ This repository chronicles my adventure through competitive programming, where I
     ├── 📄 208A-Dubstep.py
     ├── 📄 318A-Even-Odds.cpp
     └── 📄 580A-Kefa-and-First-Steps.cpp
-├── 📄 update_readme.py
 └── 📄 README.md
 ```
 
